@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from config.choices import EstadoGeneral
 from envios.querysets import RutaQuerySet
 
@@ -25,3 +26,7 @@ class Ruta(models.Model):
         verbose_name = 'Ruta'
         verbose_name_plural = 'Rutas'
         ordering = ['origen', 'destino']
+=======
+
+# Create your models here.
+>>>>>>> bdce5c42d12aef25eec1cb6eb0b53bcb56addb1f

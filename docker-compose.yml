@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+version: '3.9'
+
+>>>>>>> bdce5c42d12aef25eec1cb6eb0b53bcb56addb1f
 services:
   web:
     build: .
@@ -20,6 +25,7 @@ services:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
 
+<<<<<<< HEAD
   adminer:
     image: adminer
     ports:
@@ -38,5 +44,7 @@ services:
     depends_on:
       - db
 
+=======
+>>>>>>> bdce5c42d12aef25eec1cb6eb0b53bcb56addb1f
 volumes:
   postgres_data:

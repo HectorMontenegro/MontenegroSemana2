@@ -1,4 +1,5 @@
 from django.contrib import admin
+<<<<<<< HEAD
 from .models import Empleado, Encomienda, HistorialEstado
 
 
@@ -21,3 +22,15 @@ class EmpleadoAdmin(admin.ModelAdmin):
 class HistorialEstadoAdmin(admin.ModelAdmin):
     list_display = ('encomienda', 'estado_anterior', 'estado_nuevo', 'empleado', 'fecha_cambio')
     readonly_fields = ('fecha_cambio',)
+=======
+
+# Register your models here.
+from django.contrib import admin
+from .models import Encomienda
+
+@admin.register(Encomienda)
+class EncomiendaAdmin(admin.ModelAdmin):
+    list_display = ('codigo', 'descripcion', 'peso_kg', 'estado', 'fecha_envio')
+    list_filter = ('estado',)
+    search_fields = ('codigo', 'descripcion')
+>>>>>>> bdce5c42d12aef25eec1cb6eb0b53bcb56addb1f

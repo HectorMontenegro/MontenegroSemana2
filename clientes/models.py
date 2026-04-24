@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from config.choices import EstadoGeneral, TipoDocumento
 from envios.querysets import ClienteQuerySet
 
@@ -43,3 +44,7 @@ class Cliente(models.Model):
         verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
         ordering = ['apellidos', 'nombres']
+=======
+
+# Create your models here.
+>>>>>>> bdce5c42d12aef25eec1cb6eb0b53bcb56addb1f
